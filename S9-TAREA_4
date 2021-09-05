@@ -1,0 +1,53 @@
+class Empresa:
+    def __init__(self,nom="Alixe", ruc="0000e", telf=0, direc=" ",dep= " ", empl= " ",rsocial=" "):
+        self.nombre=nom
+        self.ruc=ruc
+        self.telefono=telf
+        self.direccion=direc
+        self.departamento=dep
+        self.empleado=empl
+        self.razonSocial=rsocial
+
+    def mostrarEmpresa(self):
+        print("Empresa {:20} Ruc:{}".format(self.nombre , self.ruc))
+
+        
+
+class Departamentos:
+    def __init__(self,):
+        pass
+
+class Datos:
+    def __init__(self,nom,ced,tel,dep):
+        self.nombre = nom
+        self.cedula = ced
+        self.telefono= tel
+        self.departamento=dep=input("Ingrese su departamento: ") 
+        
+
+    def mostrarDatos(self):
+        print(self.nombre,self.cedula,self.telefono,self.departamento)
+
+class EmpleadoOficinista(Datos):
+    def __init__(self):
+        pass
+
+class EmpleadoObrero:
+    def __init__(self):
+        pass
+
+class HoExtra:
+    def __init__(self):
+        pass
+
+class Sueldo(HoExtra):
+    def __init__(self):
+        super().__init__()
+
+
+emp=Empresa()
+emp.mostrarEmpresa()
+print(emp.nombre)
+dat=Datos("Luis","0989182932","0989166306"," ")
+dat.mostrarDatos()
+print(dat.mostrarDatos)
